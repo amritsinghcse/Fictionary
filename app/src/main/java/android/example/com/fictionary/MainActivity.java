@@ -2,7 +2,6 @@ package android.example.com.fictionary;
 
 import android.content.ContentResolver;
 import android.database.Cursor;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.provider.UserDictionary;
 import android.provider.UserDictionary.Words;
@@ -28,7 +27,6 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         ListView dictListView = (ListView) findViewById(R.id.dictionary_list_view);
-        dictListView.setDivider(null);
         ContentResolver resolver = getContentResolver();
 
         Cursor cursor = resolver.query(UserDictionary.Words.CONTENT_URI, null, null, null, null);
