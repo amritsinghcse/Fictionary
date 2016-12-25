@@ -9,10 +9,7 @@ import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.ListView;
 
-/**
- * This is the central activity for the Provider Dictionary Example App. The purpose of this app is
- * to show an example of accessing the {@link Words} list via its' Content Provider.
- */
+
 public class MainActivity extends ActionBarActivity {
 
     private final String[] COLUMNS_TO_BE_FOUND = new String[]{
@@ -38,8 +35,11 @@ public class MainActivity extends ActionBarActivity {
 
         SimpleCursorAdapter adapter = new SimpleCursorAdapter(getApplicationContext(), android.R.layout.two_line_list_item, cursor,COLUMNS_TO_BE_FOUND, LAYOUT_ITEMS_TO_FILL,0);
 
+<<<<<<< HEAD
 
         // Don't forget to attach the adapter to the ListView
+=======
+>>>>>>> 9371860750d18db4c325995b2a650ee666b1b8b1
         dictListView.setAdapter(adapter);
     }
 }
