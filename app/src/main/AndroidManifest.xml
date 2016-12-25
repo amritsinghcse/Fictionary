@@ -1,6 +1,6 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.example.com.dictionaryproviderexample" >
+    package="android.example.com.fictionary" >
 
     <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
 

@@ -5,7 +5,7 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        applicationId "android.example.com.dictionaryproviderexample"
+        applicationId "android.example.com.fictionary"
         minSdkVersion 10
         targetSdkVersion 21
         versionCode 1
