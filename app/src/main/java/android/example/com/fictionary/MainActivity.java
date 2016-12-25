@@ -2,6 +2,7 @@ package android.example.com.fictionary;
 
 import android.content.ContentResolver;
 import android.database.Cursor;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.provider.UserDictionary;
 import android.provider.UserDictionary.Words;
@@ -17,8 +18,8 @@ public class MainActivity extends ActionBarActivity {
     };
 
     private static final int[] LAYOUT_ITEMS_TO_FILL = new int[] {
-            android.R.id.text1,
-            android.R.id.text2
+            R.id.word,
+            R.id.frequency
     };
 
     @Override
@@ -27,13 +28,13 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         ListView dictListView = (ListView) findViewById(R.id.dictionary_list_view);
-
+        dictListView.setDivider(null);
         ContentResolver resolver = getContentResolver();
 
         Cursor cursor = resolver.query(UserDictionary.Words.CONTENT_URI, null, null, null, null);
 
 
-        SimpleCursorAdapter adapter = new SimpleCursorAdapter(getApplicationContext(), android.R.layout.two_line_list_item, cursor,COLUMNS_TO_BE_FOUND, LAYOUT_ITEMS_TO_FILL,0);
+        SimpleCursorAdapter adapter = new SimpleCursorAdapter(getApplicationContext(),R.layout.listview_layout, cursor,COLUMNS_TO_BE_FOUND, LAYOUT_ITEMS_TO_FILL,0);
 
 
         dictListView.setAdapter(adapter);

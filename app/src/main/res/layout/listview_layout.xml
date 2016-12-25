@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="#fff9c4"
+    android:paddingTop="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/word"
+        android:text="Word"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColor="#000000"
+   />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frequency"
+        android:textColor="#000"
+        android:text="255"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>
